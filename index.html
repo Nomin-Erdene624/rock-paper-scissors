@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>rock,paper,scissors</title>
+		<style>
+			body{
+				background-color:pink;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				height:90vh;
+			}
+			img{
+				width:32%;
+				cursor:pointer;
+			}
+			.game{
+				background-color:#fff;
+				width:600px;
+				padding:15px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="game">
+		<p class="cPoint">Computer:0</p>
+		<p class="pPoint">Player:0</p>
+		<img onclick="play('rock')"src="https://w7.pngwing.com/pngs/422/99/png-transparent-rock-paper-scissors-computer-icons-scissors-game-white-face.png">
+		<img onclick="play('paper')" src="https://www.vhv.rs/dpng/d/490-4906131_rock-paper-scissors-clipart-rock-paper-scissors-png.png">
+		<img onclick="play('scissors')" src="https://www.seekpng.com/png/detail/111-1114370_rock-paper-scissors-rock-paper-scissors-clipart.png">
+		<p class="pChoice">Player choice:</p>
+		<p class="cChoice">Computer choice:</p>
+		<p class="winner">Winner:</p>
+		<button onclick="restart()">restart</button>
+	</div>
+		<script src="app.js"></script>
+	</body>
+</html>
